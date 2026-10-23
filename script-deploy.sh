@@ -11,7 +11,7 @@ if [ -z "$container_ids" ]; then
 else
   for container_id in $container_ids; do
     echo "Parando container: $container_id"
-    docker stop $container_id
+    docker stop "$container_id"
   done
   echo "Todos os containers em execução foram parados"
 fi

@@ -16,6 +16,7 @@ services:
   
   api:
     build: .
+    image: vollmed-api_api:latest
     container_name: vollmed
     restart: unless-stopped
     environment:
